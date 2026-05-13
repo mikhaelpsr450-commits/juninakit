@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: 'Poppins', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+
+  --color-brand-red: #E53935;
+  --color-brand-yellow: #FFF176;
+  --color-brand-green: #66BB6A;
+  --color-brand-green-hover: #4CAF50;
+  --color-brand-purple: #7E57C2;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: white;
+    color: #1a1a1a;
+  }
+  b, strong, .font-bold, .font-extrabold, .font-black {
+    font-weight: 500 !important;
+  }
+}
